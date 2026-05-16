@@ -8,7 +8,9 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
 # Gmail read-only scope — genişletmek için GMAIL_MODIFY veya GMAIL_FULL kullanılabilir
-SCOPES = ["https://www.googleapis.com/auth/gmail.readonly"]
+SCOPES = [
+    "https://www.googleapis.com/auth/gmail.modify",
+]
 
 TOKEN_PATH = Path("token.json")
 CREDENTIALS_PATH = Path("credentials.json")
